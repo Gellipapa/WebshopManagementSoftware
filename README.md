@@ -1,0 +1,2 @@
+# WebshopManagementSoftware
+Asztali alkalmazás szakdolgozat
