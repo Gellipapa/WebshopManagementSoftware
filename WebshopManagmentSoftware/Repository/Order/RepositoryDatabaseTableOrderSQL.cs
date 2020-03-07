@@ -124,7 +124,7 @@ namespace WebshopManagmentSoftware.Repository
         /// Új rendelést beszúr az adatbázisba
         /// </summary>
         /// <param name="newOrder">Az új rendelés</param>
-        public void insertPizzaToDatabase(Order newOrder)
+        public void insertOrderToDatabase(Order newOrder)
         {
             MySqlConnection connection = new MySqlConnection(connectionString);
             try

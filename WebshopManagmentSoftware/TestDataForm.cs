@@ -91,6 +91,35 @@ namespace WebshopManagmentSoftware
                 kiirHibauzenetet("Táblák törlése sikertelen!");
             }
         }
+
+
+        private void dataGridViewOrders_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+
+            if (e.RowIndex >= 0)
+            {
+                //gets a collection that contains all the rows
+                DataGridViewRow row = this.dataGridViewOrders.Rows[e.RowIndex];
+                //populate the textbox from specific value of the coordinates of column and row.
+                metroTextBoxID.Text = row.Cells[0].Value.ToString();
+                metroTextBoxCustomerName.Text = row.Cells[1].Value.ToString();
+                metroTextBoxProductName.Text = row.Cells[2].Value.ToString();
+                metroTextBoxProductQuantity.Text = row.Cells[3].Value.ToString();
+                metroTextBoxProductPrice.Text = row.Cells[4].Value.ToString();
+
+            }
+
+        }
+
+        private void dataGridViewOrders_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+
+
     }
 
 

@@ -57,6 +57,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrder.Designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TestDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +97,9 @@
     <Compile Include="Repository\Repo.cs" />
     <Compile Include="Repository\RepositoryDatabase.cs" />
     <Compile Include="myExceptions\RepositoryException.cs" />
+    <EmbeddedResource Include="AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>

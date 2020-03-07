@@ -15,7 +15,7 @@ namespace WebshopManagmentSoftware.Model
         public string getInsert()
         {
             return
-                "INSERT INTO `test` (`ID`, `customerName`, `productName`,`productQuantity`,`productPrice`) " +
+                "INSERT INTO `test1` (`ID`, `customerName`, `productName`,`productQuantity`,`productPrice`) " +
                 "VALUES ('" +
                 id +
                 "', '" +
@@ -37,7 +37,7 @@ namespace WebshopManagmentSoftware.Model
         public string getUpdate(int id)
         {
             return
-                "UPDATE `test` SET `customerName` = '" +
+                "UPDATE `test1` SET `customerName` = '" +
                 getCustomerName() +
                 "', `productName` = '" +
                 getProductName() +
@@ -47,7 +47,7 @@ namespace WebshopManagmentSoftware.Model
                 "', `productPrice` = '" +
                 getProductPrice()+
 
-                "' WHERE `test`.`ID` = " +
+                "' WHERE `test1`.`ID` = " +
                 id;
         }
 
@@ -57,7 +57,7 @@ namespace WebshopManagmentSoftware.Model
         /// <returns></returns>
         public static string getSQLCommandDeleteAllRecord()
         {
-            return "DELETE FROM test";
+            return "DELETE FROM test1";
         }
 
         /// <summary>
